@@ -1,14 +1,129 @@
 # types
 
+为了提高代码质量，通常需要对变量进行严格的数据类型检查。比如，一个函数，首先需要对函数入参做类型检查，对于非预期的数据类型都需要提示或返回错误。
+
+以下是常见的一些数据类型。
+
+## int type
+
 ```python
 >>> import types
->>> type(3)
+>>> a = 5
+>>> type(a)
 <type 'int'>
->>> type(3) == types.IntType
+>>> type(a) is int
 True
->>> type('abc') == types.StringType
+>>> type(a) is types.IntType
+True
+>>> type(a) is not types.IntType
+False
+>>> not type(a) is types.IntType
+False
+>>> b = '5'
+>>> type(b) is not types.IntType
 True
 >>> 
+```
+
+## long type
+
+```python
+>>> import types
+>>> a = 1234568438124
+>>> a
+1234568438124L
+>>> type(a) is long
+True
+>>> type(a) is types.LongType
+True
+>>> 
+```
+
+## string
+
+```python
+>>> b = 'abc'
+>>> type(b)
+<type 'str'>
+>>> type(b) is str
+True
+>>> type(b) is types.StringType
+True
+>>> 
+```
+
+## list
+
+```python
+>>> c = [1, 2, 3]
+>>> type(c)
+<type 'list'>
+>>> type(c) is list
+True
+>>> type(c) is types.ListType
+True
+>>> 
+```
+
+## dict
+
+```python
+>>> 
+>>> d = {"name": "Tom"}
+>>> type(d)
+<type 'dict'>
+>>> type(d) is dict
+True
+>>> type(d) is types.DictType
+True
+>>> 
+```
+
+## tuple
+
+```
+>>> 
+>>> e = (1, 2)
+>>> type(e)
+<type 'tuple'>
+>>> type(e) is tuple
+True
+>>> type(e) is types.TupleType
+True
+>>> 
+```
+
+## None
+
+```python
+>>> f = None
+>>> type(f)
+<type 'NoneType'>
+>>> type(f) is types.NoneType
+True
+>>> f is None
+True
+>>> 
+```
+
+通常并不会判断 ```NoneType``` 类型，而直接用 ```is None``` 判断。
+
+## function
+
+```python
+>>> def g():
+    pass
+
+>>> type(g)
+<type 'function'>
+>>> type(g) is function
+
+Traceback (most recent call last):
+  File "<pyshell#65>", line 1, in <module>
+    type(g) is function
+NameError: name 'function' is not defined
+>>> type(g) is types.FunctionType
+True
 >>> 
 ```
 

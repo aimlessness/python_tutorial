@@ -1,12 +1,15 @@
 import types
 
+def isIntOrLong(value):
+    return type(value) is types.IntType or type(value) is types.LongType
+
 def gcd(m, n):
     '''Calculate the gcd of m and n.
     Both m and n must be integer, and m,n > 0.
     For invalid m or n, return None.
     '''
 
-    if not type(m) is types.IntType or not type(n) is types.IntType:
+    if not isIntOrLong(m) or not isIntOrLong(n):
         return None
 
     if m <= 0 or n <= 0:

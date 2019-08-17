@@ -1,3 +1,21 @@
+# 课程说明
+
+本课程是 Python 入门系列课程，面向无软件编程基础的软件爱好者。
+
+每次课程划分为如下几个部分:
+
+- (1-)README.md: 概况说明本讲语法知识点和本讲编程练习题;
+- 2-syntax.md: 本讲要用到的语法知识点;
+- 3-program.md: 本讲的练习题，包括需求、设计、伪代码;
+- 4-others.md: 其他补充说明，包括本讲遗留问题、后续课程计划，等等。
+- \*.py: 本讲练习题的参考代码。
+
+# 学习建议
+
+首先以 2-syntax.md 的内容，学习 Python 的相关语法知识点，然后阅读 program.md, 并尝试编码实现。
+
+每讲提供的 \*.py 仅供参考。
+
 # 课程记录
 
 | 序号 |  日期   | 星期 | 练习题 | 教学目的  |
@@ -7,4 +25,4 @@
 | lesson-003 | 2019-08-04 | 星期日  | 无       | module, import, function, if-else, sys.argv |
 | lesson-004 | 2019-08-10 | 星期六  | 素数筛选  | array, sys.argv, function, for in|
 | lesson-005 | 2019-08-17 | 星期六  | 奇数阶幻方| if, for in, while, lemda, array/list|
-| lesson-006 | |   | 最大公约数、Fib数列| if, for in, while, lemda, array/list|
+| lesson-006 | |   | 最大公约数、Fib数列| module, import, types, for/while, continue, break|

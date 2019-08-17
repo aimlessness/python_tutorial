@@ -100,5 +100,20 @@ for m, n, expect in testcases:
 
 # 参考代码
 
-- [math_util.py](./math_util.py)
-- [gcd_test.py](./gcd_test.py)
+- math_util.py
+- gcd_test.py
+
+执行结果:
+
+```
+>python gcd_test.py
+PASS: (5, 17, 1)
+PASS: (17, 5, 1)
+PASS: (2, 4, 2)
+PASS: (6, 3, 3)
+PASS: (6.0, 3, None)
+PASS: (6, 3, None)
+PASS: (-6, 3, None)
+PASS: (6, -3, None)
+gcd(1234568438124, 439181342313142344) = 12
+```
