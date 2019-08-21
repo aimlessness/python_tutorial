@@ -26,3 +26,7 @@
 | lesson-004 | 2019-08-10 | 星期六  | 素数筛选  | array, sys.argv, function, for in|
 | lesson-005 | 2019-08-17 | 星期六  | 奇数阶幻方| if, for in, while, lemda, array/list|
 | lesson-006 | |   | 最大公约数、Fib数列| module, import, types, for/while, continue, break|
+| lesson-007 | |   | 三边是否可以构成三角形 | 数据类型检查(type), tuple, 布尔逻辑 |
+| lesson-008 | |   | 穷举法遍历所有的三阶幻方 | datetime, time, 多重循环 |
+| lesson-009 | |   | 全排列 | 递归 |
+| lesson-010 | |   | 回溯法与幻方 | |
