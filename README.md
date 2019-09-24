@@ -18,15 +18,17 @@
 
 # 课程记录
 
-| 序号 |  日期   | 星期 | 练习题 | 教学目的  |
+| 序号 |  日期   | 练习题 | 教学目的  |
 | ---- | ----  | ----  | ---- | ---- |
-| lesson-001 | 2019-07-21 | 星期日  | 无       | 软件编程简介、python交互式&命令行文件 |
-| lesson-002 | 2019-07-29 | 星期日  | 无       | 位运算、命令行参数 |
-| lesson-003 | 2019-08-04 | 星期日  | 无       | module, import, function, if-else, sys.argv |
-| lesson-004 | 2019-08-10 | 星期六  | 素数筛选  | array, sys.argv, function, for in|
-| lesson-005 | 2019-08-17 | 星期六  | 奇数阶幻方| if, for in, while, lemda, array/list|
-| lesson-006 | |   | 最大公约数、Fib数列| module, import, types, for/while, continue, break|
-| lesson-007 | |   | 三边是否可以构成三角形 | 数据类型检查(type), tuple, 布尔逻辑 |
-| lesson-008 | |   | 穷举法遍历所有的三阶幻方 | datetime, time, 多重循环 |
-| lesson-009 | |   | 全排列 | 递归 |
-| lesson-010 | |   | 回溯法与幻方 | |
+| lesson-001 | 2019-07-21 | 无       | 软件编程简介、python交互式&命令行文件 |
+| lesson-002 | 2019-07-29 | 无       | 位运算、命令行参数 |
+| lesson-003 | 2019-08-04 | 无       | module, import, function, if-else, sys.argv |
+| lesson-004 | 2019-08-10 | 素数筛选  | array, sys.argv, function, for loop|
+| lesson-005 | 2019-09-15 | 乘法口诀表、素数筛选  | for loop|
+| lesson-006 | 2019-09-21 | 奇数阶幻方-I | if, for in, while, array/list|
+| lesson-007 | 2019-xxx | 奇数阶幻方-II | if, for in, while, array/list|
+| lesson-xxx | | 最大公约数、Fib数列| module, import, types, for/while, continue, break|
+| lesson-xxx | | 三边是否可以构成三角形 | 数据类型检查(type), tuple, 布尔逻辑 |
+| lesson-xxx | | 穷举法遍历所有的三阶幻方 | datetime, time, 多重循环 |
+| lesson-xxx | | 全排列 | 递归 |
+| lesson-xxx | | 回溯法与幻方 | |

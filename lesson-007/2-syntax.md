@@ -1,53 +1,128 @@
-# 语法
+# list
 
-## 变量类型
+## count, pop
 
 ```python
-
->>> type(1)
-<type 'int'>
->>> type(1.0)
-<type 'float'>
->>> type(111111111111111111111)
-<type 'long'>
->>> type('1')
-<type 'str'>
+>>> b
+[5, 6, 7, 8]
+>>> b.extend([5, 6])
+>>> b
+[5, 6, 7, 8, 5, 6]
+>>> b.count(5)
+2
+>>> b.count(6)
+2
+>>> b.count(7)
+1
+>>> b.pop()
+6
+>>> b
+[5, 6, 7, 8, 5]
+>>> b.pop()
+5
+>>> b
+[5, 6, 7, 8]
+>>> b.pop()
+7
+>>> b.pop()
+6
+>>> b.pop()
+5
+>>> b
+[]
+>>> b.pop()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: pop from empty list
 >>> 
 ```
 
-## 布尔值及逻辑判断
+## List comprehensions
 
 ```python
->>> a, b, c = 1, 2, 3
->>> a == b
-False
->>> a > b
-False
->>> a < b
-True
->>> a + b == c
-True
->>> a < b and b < c
-True
->>> not a < b
-False
->>> a is None
-False
->>> a is not None
-True
+>>> squares = []
+>>> for x in range(10):
+...     squares.append(x**2)
+... 
+>>> squares
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+>>> 
+>>> squares = [x**2 for x in range(10)]
+>>> squares
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 >>> 
 ```
 
-## tuple
 
 ```python
->>> pointA = (1, 2)
->>> pointB = (3, 4)
->>> x_a, y_a = pointA
->>> x_b, y_b = pointB
->>> import math
->>> distance = math.sqrt((x_b - x_a)**2 + (y_b - y_a)**2)
->>> distance
-2.8284271247461903
+>>> [(x, y) for x in range(5) for y in range(5) if x % 2 == 1 and y % 2 == 0]
+[(1, 0), (1, 2), (1, 4), (3, 0), (3, 2), (3, 4)]
 >>> 
+```
+
+等价于
+```python
+>>> combs = []
+>>> for x in range(5):
+...     for y in range(5):
+...         if x % 2 == 1 and y % 2 == 0:
+...             combs.append((x, y))
+... 
+>>> combs
+[(1, 0), (1, 2), (1, 4), (3, 0), (3, 2), (3, 4)]
+>>> 
+```
+
+
+```python
+>>> vec = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>>> [num for elem in vec for num in elem]
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> 
+```
+
+# 二维数组
+
+数组中的每个元素还是一个数组。
+
+## 示例1
+
+```python
+>>> magic = [[8, 1, 6], [3, 5, 7], [4, 9, 2]]
+>>> type(magic)
+<type 'list'>
+>>> 
+>>> magic
+[[8, 1, 6], [3, 5, 7], [4, 9, 2]]
+>>> 
+>>> for row in magic:
+...     for column in row:
+...         print column,
+...     print
+... 
+8 1 6
+3 5 7
+4 9 2
+>>> for i in range(3):
+...     for j in range(3):
+...         print magic[i][j],
+...     print
+... 
+8 1 6
+3 5 7
+4 9 2
+>>> 
+```
+
+## 示例2
+
+```python
+>>> n = 3
+>>> magic = [[x for x in range(n)] for y in range(n)]
+>>> magic
+[[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+>>> magic = [[0 for x in range(n)] for y in range(n)]
+>>> magic
+[[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+>>>
 ```

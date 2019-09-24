@@ -1,15 +1,10 @@
 # 语法部分(syntax.md)
 
-- 代码组织方式: module, import
-- 数据类型: module types
-- 控制结构: while loop
-- range()
-
-# 设计部分(program.md)
-
-- pass place-holder
-- TDD
+- 数组/列表
+- 二维数组
 
 # 练习部分(program.md)
 
-计算两个正整数的最大公约数。
+奇数阶幻方的生成，以及打印输出。
+
+本次课程仅完成幻方构造的伪代码，下次课程编码、测试。
