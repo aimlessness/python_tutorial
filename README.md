@@ -26,7 +26,8 @@
 | lesson-004 | 2019-08-10 | 素数筛选  | array, sys.argv, function, for loop|
 | lesson-005 | 2019-09-15 | 乘法口诀表、素数筛选  | for loop|
 | lesson-006 | 2019-09-21 | 奇数阶幻方-I | if, for in, while, array/list|
-| lesson-007 | 2019-xxx | 奇数阶幻方-II | if, for in, while, array/list|
+| lesson-007 | 2019-10-05 | 奇数阶幻方-II | 测验-I, 幻方代码实现|
+| lesson-007 | 2019-10-06 | 奇数阶幻方-III | 测验-II, 幻方代码实现|
 | lesson-xxx | | 最大公约数、Fib数列| module, import, types, for/while, continue, break|
 | lesson-xxx | | 三边是否可以构成三角形 | 数据类型检查(type), tuple, 布尔逻辑 |
 | lesson-xxx | | 穷举法遍历所有的三阶幻方 | datetime, time, 多重循环 |
